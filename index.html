@@ -1,22 +1,33 @@
 <html>
 
 <head>
-    <title></title>
+    <title>Sudoko Solver</title>
+
     <script type="text/javascript" src="sudoku.js"></script>
     <script type="text/javascript" src="analytics.js"></script>
     <style type="text/css">
         body {
             font-family: Calibri, sans-serif;
+            background-color: #181717;
+            background: linear-gradient(to bottom, #000000 0%, #cc0066 100%);
+        }
+        
+        .Floating_text {
+            color: rgb(248, 242, 242);
+            font-size: 50px;
+            font-style: italic;
         }
         
         #container {
-            text-align: center
+            text-align: center;
+            color: rgb(21, 19, 19);
         }
         
         table {
             border-collapse: collapse;
             font-size: 2em;
             margin: 0 auto;
+            color: rgb(255, 255, 255);
         }
         
         colgroup,
@@ -32,24 +43,66 @@
             padding: 0;
         }
         
-        button {
-            margin-top: 15px;
-            font-size: 1.5em;
+        #solve-button {
+            border-radius: 30px;
+            background-color: #0fb863;
+            border: none;
+            color: #ffffff;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+            width: 150px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 7px;
         }
         
-        padd {
-            padding-bottom: 100px;
+        #solve-button {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
         }
         
-        ]
+        #clear-button {
+            border-radius: 30px;
+            background-color: #790e10;
+            border: none;
+            color: #ffffff;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+            width: 150px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 7px;
+        }
+        
+        #clear-button {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        
+        .padd {
+            color: rgb(246, 241, 241);
+        }
+        
+        .sudoko-board {
+            color: rgb(244, 239, 239);
+        }
     </style>
 </head>
 
 <body>
 
+    <div class='Floating_text'>
+        <marquee class='Floating_text_1'>This is sudoko solver which uses backtracking algorithm to function the program</marquee>
+    </div>
+
 
     <div id="container">
-        <img src="gfg.png" style="height:100px ; width: 400px; align =" left " ">
 
         <h1 class="padd">Sudoku Solver</h1>
 
